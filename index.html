@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1> WEATHER APP</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button></input>
+        </div>
+    </div>
+
+    <main>
+        <!-- Current Weather -->
+        <div class="weather">
+            <h2 id="city">Delhi,IN</h2>
+            <div class="temp-box">
+                <img src="/icons/weather1.webp" alt="" id="img">
+                <p id="temperature">26 °C</p>
+            </div>
+            <div>
+                <span class="time" id="time">06:09 <span id="am-pm">PM</span> </span>
+                -
+                <span class="date" id="date">
+                    Monday sep 19
+                </span>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="details">
+            <p class="detail-header">Weather details</p>
+            <div class="details-list">
+                
+                <div class="item">
+                    <div>
+                        <span>Humidity</span>
+                    </div>
+                    <span class="cloud " id="Humidity">89%</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <span>Wind Speed</span>
+                    </div>
+                    <span class="cloud " id="Wind">89%</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <span>Feels Like</span>
+                    </div>
+                    <span class="cloud " id="Feels">89%</span>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <span>Air Pressure</span>
+                    </div>
+                    <span class="cloud " id="air">89%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hourly Forecast -->
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time" id="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time" id="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time" id="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time" id="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time" id="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Daily Forecast -->
+    <div class="forecstD">
+        <p class="cast-header"> Next 4 days forecast</p>
+        <div class="weekF">
+
+            <div class="dayF">
+                <p class="date" id="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date" id="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date" id="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF" id="date">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+		<div class="footer">
+			<div class="float-start">
+				<p>2023 &copy; Nikhil</p>
+			</div>
+			<div class="float-end">
+                <p>Designed and Developed with
+                    <span style="color:red">
+                        <i class="fa fa-heart"></i> by
+                        <a href="#" class="author-footer">Nikhil Chichghare </a>
+                    </span>
+                </p>
+            </div>
+		</div>
+	</footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
